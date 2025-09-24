@@ -18,7 +18,9 @@ const Questionnaire = () => {
     try {
       // This will be replaced with your actual API call
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:5000/api/submit-details', {
+      // const response = await fetch('http://localhost:5000/api/submit-details', 
+      const response = await fetch('https://college-predictor-2-0-cp21.vercel.app/', 
+        {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
