@@ -12,7 +12,14 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173', // Vite dev server
+        'https://your-frontend-app.vercel.app' // Your deployed frontend
+    ],
+    credentials: true
+}));
 app.use(express.json());
 
 // Serve static files from React build (adjust path as needed)
