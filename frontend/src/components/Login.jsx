@@ -22,7 +22,7 @@ const Login = ({ switchToSignup }) => {
     dispatch(start())
     
     try {
-      const response = await fetch('/api/login', {
+      const response = await fetch('https://college-predictor-2-0.vercel.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
