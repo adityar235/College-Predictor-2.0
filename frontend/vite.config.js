@@ -16,7 +16,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://college-predictor-2-0-ka8d.vercel.app/',
+        target: 'https://college-predictor-2-0-cp21.vercel.app/',
         changeOrigin: true
       }
     }
