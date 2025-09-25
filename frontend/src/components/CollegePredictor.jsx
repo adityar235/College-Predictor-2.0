@@ -29,7 +29,7 @@ const CollegePredictor = () => {
       const token = localStorage.getItem('token')
       const effectiveRank = category === "General" ? rank : subcategoryRank
       
-      const response = await fetch('/api/getColleges', {
+      const response = await fetch('https://college-predictor-2-0.vercel.app/getColleges', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
