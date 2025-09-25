@@ -14,7 +14,7 @@ const app = express();
 // Middleware
 // app.use(cors());
 app.use(cors({
-    origin: ["https://college-predictor-2-0.vercel.app/"],
+    origin: ["https://college-predictor-2-0.vercel.app"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
